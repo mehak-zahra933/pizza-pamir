@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { WHATSAPP_LINK } from "@/lib/site-data";
+import logoUrl from "@/assets/logo.png";
 
 const links = [
   { href: "#menu", label: "Menu" },
@@ -42,15 +43,11 @@ export function Navbar() {
             scrolled ? "text-foreground" : "text-cream",
           )}
         >
-          Pizza <span className="italic">Pamir</span>
-          <span
-            className={cn(
-              "mt-1 block text-[0.55rem] tracking-[0.32em] uppercase",
-              scrolled ? "text-muted-foreground" : "text-cream/70",
-            )}
-          >
-            Hunza · Pakistan
-          </span>
+          <img
+            src={logoUrl}
+            alt="Pizza Pamir Logo"
+            className="h-14 w-auto object-contain"
+          />
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
