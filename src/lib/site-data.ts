@@ -2,6 +2,7 @@ import locKarimabad from "@/assets/loc-karimabad.jpg";
 import locAliabad from "@/assets/loc-aliabad.jpg";
 import locAttabad from "@/assets/loc-attabad.jpg";
 import locGojal from "@/assets/loc-gojal.jpg";
+import locTashkurgan from "@/assets/loc-tashkurgan.png";
 import menuClassic from "@/assets/menu-classic.jpg";
 import menuSpecial from "@/assets/menu-special.jpg";
 import menuFamily from "@/assets/menu-family.jpg";
@@ -87,6 +88,18 @@ export const locations: Location[] = [
       "The last warm stop before the high passes. Fireplace on, kettle boiling, road dust welcome.",
     image: locGojal,
     maps: "https://www.google.com/maps/search/?api=1&query=Pamir+Pizza+Gojal+Hunza",
+  },
+  {
+    id: "tashkurgan",
+    name: "Tashkurgan",
+    area: "Food Street, Xinjiang",
+    address: "Tashkurgan Food Street, Xinjiang, China",
+    rating: 4.8,
+    reviews: 15,
+    hours: "Open daily · 11:00 – 22:00",
+    description: "Branch No. 05. Bringing the authentic taste of Pizza Pamir across the border to the historic Silk Road.",
+    image: locTashkurgan,
+    maps: "https://www.google.com/maps/search/?api=1&query=Tashkurgan+Food+Street+Xinjiang",
   },
 ];
 

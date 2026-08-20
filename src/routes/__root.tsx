@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Pizza Pamir: freshly baked pizza and mountain views across four locations in Hunza, Pakistan.",
+          "Pizza Pamir: freshly baked pizza and mountain views across five locations in Hunza and Tashkurgan.",
       },
       { name: "author", content: "Pizza Pamir" },
       { property: "og:type", content: "website" },

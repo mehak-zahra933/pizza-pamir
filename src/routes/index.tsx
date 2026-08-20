@@ -12,7 +12,7 @@ import { Footer } from "@/components/Footer";
 
 const title = "Pizza Pamir — A Slice of Hunza";
 const description =
-  "Freshly baked pizza, mountain views and all-you-can-eat feasts across four Hunza locations: Karimabad, Aliabad, Attabad Lake and Gojal.";
+  "Freshly baked pizza, mountain views and all-you-can-eat feasts across five locations: Karimabad, Aliabad, Attabad Lake, Gojal, and Tashkurgan.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
