@@ -1,24 +1,48 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { MountainRoute } from "@/components/MountainRoute";
+import { MenuSection } from "@/components/MenuSection";
+import { SignatureSection } from "@/components/SignatureSection";
+import { ExperienceSection } from "@/components/ExperienceSection";
+import { ReviewsSection } from "@/components/ReviewsSection";
+import { LocationsSection } from "@/components/LocationsSection";
+import { WhatsAppFab } from "@/components/WhatsAppFab";
+import { Footer } from "@/components/Footer";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = "Pizza Pamir — A Slice of Hunza";
+const description =
+  "Freshly baked pizza, mountain views and all-you-can-eat feasts across four Hunza locations: Karimabad, Aliabad, Attabad Lake and Gojal.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "restaurant" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <MountainRoute />
+        <MenuSection />
+        <SignatureSection />
+        <ExperienceSection />
+        <ReviewsSection />
+        <LocationsSection />
+      </main>
+      <Footer />
+      <WhatsAppFab />
+    </>
   );
 }
