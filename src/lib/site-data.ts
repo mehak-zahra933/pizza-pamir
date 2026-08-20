@@ -90,75 +90,109 @@ export const locations: Location[] = [
   },
 ];
 
-export type MenuItem = {
+export const menuCategories = [
+  "Classic Pizza's",
+  "Premium Pizza's",
+  "Special Pizza's",
+  "Hunza Fresh Juice",
+  "Coffee's",
+  "Pasta's",
+  "Sandwiches",
+  "Appetizer",
+  "Beverages",
+] as const;
+
+export type PizzaSize = "S" | "M" | "L" | "XL";
+
+export type PizzaItem = {
+  type: "pizza";
   category: string;
   name: string;
   description: string;
-  price: string;
-  image: string;
+  prices: Record<PizzaSize, number>;
   tag?: string;
+  image?: string;
 };
 
-export const menuItems: MenuItem[] = [
-  {
-    category: "Pizzas",
-    name: "Pamir Margherita",
-    description: "Slow-proofed dough, tomato, generous mozzarella, fresh basil.",
-    price: "Rs 950",
-    image: menuClassic,
-    tag: "Classic",
-  },
-  {
-    category: "Special Pizzas",
-    name: "Karakoram Meat Feast",
-    description: "Spiced beef, chicken tikka, peppers, olives, double cheese.",
-    price: "Rs 1,850",
-    image: menuSpecial,
-    tag: "Signature",
-  },
-  {
-    category: "Family / All You Can Eat",
-    name: "Base Camp Feast",
-    description: "Unlimited pizza, wings and sides for the whole table.",
-    price: "Rs 2,400 / person",
-    image: menuFamily,
-    tag: "All you can eat",
-  },
-  {
-    category: "Kids",
-    name: "Little Climber",
-    description: "Mini cheese pizza, crispy fries and a fresh juice.",
-    price: "Rs 750",
-    image: menuKids,
-    tag: "Kids",
-  },
-  {
-    category: "Drinks",
-    name: "Hunza Apricot Cooler",
-    description: "Cold-pressed local apricot, mint, mountain water ice.",
-    price: "Rs 350",
-    image: menuDrinks,
-    tag: "Local",
-  },
-  {
-    category: "Sides",
-    name: "Fireside Garlic Bread",
-    description: "Oven-baked garlic cheese bread, fries and house dips.",
-    price: "Rs 550",
-    image: menuSides,
-    tag: "To share",
-  },
+export type SimpleMenuItem = {
+  type: "simple";
+  category: string;
+  name: string;
+  description?: string;
+  price?: number;
+  variants?: { name: string; price: number }[];
+  tag?: string;
+  image?: string;
+};
+
+export type ExtraToppingItem = {
+  name: string;
+  prices: Record<PizzaSize, number>;
+};
+
+export type AnyMenuItem = PizzaItem | SimpleMenuItem;
+
+export const extraToppings: ExtraToppingItem[] = [
+  { name: "Chicken", prices: { S: 150, M: 250, L: 350, XL: 450 } },
+  { name: "Cheese", prices: { S: 150, M: 250, L: 350, XL: 450 } },
+  { name: "Olives", prices: { S: 100, M: 150, L: 200, XL: 250 } },
+  { name: "Mushrooms", prices: { S: 100, M: 150, L: 200, XL: 250 } },
 ];
 
-export const menuCategories = [
-  "All",
-  "Pizzas",
-  "Special Pizzas",
-  "Family / All You Can Eat",
-  "Kids",
-  "Drinks",
-  "Sides",
-] as const;
+export const menuItems: AnyMenuItem[] = [
+  // Classic
+  { type: "pizza", category: "Classic Pizza's", name: "Chicken Tikka", description: "Onion, Tikka Boti & Lot of Cheese", prices: { S: 899, M: 1499, L: 2199, XL: 2899 }, image: menuClassic },
+  { type: "pizza", category: "Classic Pizza's", name: "Chicken Fajita", description: "Onion, Green Pepper, Fajita Chicken & Lot of Cheese", prices: { S: 899, M: 1499, L: 2199, XL: 2899 } },
+  { type: "pizza", category: "Classic Pizza's", name: "Hot & Spicy Pizza", description: "Masala & Cholon, Onion, Jalapeno, Tomato & Lot of Cheese", prices: { S: 899, M: 1499, L: 2199, XL: 2899 } },
+  { type: "pizza", category: "Classic Pizza's", name: "Vegetable Pizza", description: "Onion, Mushrooms, Bell Pepper, Tomato, Sweet Corn, Black Olives & Lots of Cheese", prices: { S: 799, M: 1299, L: 1899, XL: 2499 }, tag: "Veg" },
+  { type: "pizza", category: "Classic Pizza's", name: "Beef Pepperoni", description: "Pepperoni Slice with Lot of Cheese", prices: { S: 999, M: 1599, L: 2299, XL: 2999 } },
+  { type: "pizza", category: "Classic Pizza's", name: "Chicken Pepperoni", description: "Pepperoni Slice with Lot of Cheese", prices: { S: 899, M: 1499, L: 2199, XL: 2899 } },
+  { type: "pizza", category: "Classic Pizza's", name: "Cheesy Pamir (for Cheese Lover)", description: "Lot of Cheese", prices: { S: 999, M: 1599, L: 2299, XL: 2999 } },
+  { type: "pizza", category: "Classic Pizza's", name: "Pizza on Choice", description: "Topping as per your Request.", prices: { S: 1099, M: 1699, L: 2399, XL: 3099 } },
+  // Premium
+  { type: "pizza", category: "Premium Pizza's", name: "Malai Boti Pizza", description: "Cream Sauce, Malai Boti Chicken, Smoked Chicken, Green Pepper, Tomatoes & Lot of Cheese", prices: { S: 1099, M: 1799, L: 2599, XL: 3299 } },
+  { type: "pizza", category: "Premium Pizza's", name: "Chicken Max", description: "Onion, Chicken Tikka, Sausages, Smoked Chicken, Black Olives & Lot of Cheese", prices: { S: 1099, M: 1799, L: 2599, XL: 3299 } },
+  { type: "pizza", category: "Premium Pizza's", name: "Friends Pizza", description: "Onion Green Pepper, Black Olives, Yak Smoked Beef, Chicken Tikka, Pepperoni Slice & Lot of Cheese", prices: { S: 1199, M: 1899, L: 2799, XL: 3499 }, tag: "Popular", image: menuFamily },
+  { type: "pizza", category: "Premium Pizza's", name: "Arabic Gr", description: "Green Sauce, Grilled Chicken Tomato, Green Onion & Lot of Cheese", prices: { S: 1099, M: 1799, L: 2599, XL: 3299 } },
+  // Special
+  { type: "pizza", category: "Special Pizza's", name: "Pamir's Special", description: "Special Herbs Sauce, Onion, Green Pepper, Grilled Chicken, Smoked Chicken, Mushrooms, Tomato & Lot of Cheese", prices: { S: 1299, M: 1999, L: 2899, XL: 3699 }, tag: "Chef's Special", image: menuSpecial },
+  { type: "pizza", category: "Special Pizza's", name: "King Supreme", description: "Grilled Chicken, Sausages, Smoke Chicken, Onion Bell Pepper, Mushrooms, Black Olives & Lot of Cheese", prices: { S: 1299, M: 1999, L: 2899, XL: 3699 } },
+  { type: "pizza", category: "Special Pizza's", name: "Pamir Alfal", description: "Special Pamiri Sauce, Afghani Chicken, Jalapeno Onion, Green Pepper, Black Olives & Lot of Cheese", prices: { S: 1299, M: 1999, L: 2899, XL: 3699 } },
+  { type: "pizza", category: "Special Pizza's", name: "Kabab Chaska Pizza", description: "Onion, Green Pepper, Kabab, Chicken Tikka, Black Olives & Lot of Cheese", prices: { S: 1299, M: 1999, L: 2899, XL: 3699 } },
+  { type: "pizza", category: "Special Pizza's", name: "Yak Pizza", description: "Grilled Yak Meat, Yak Smoked Beef, Yellow Tomato, Mushrooms, Green Pepper & Lot of Cheese", prices: { S: 1499, M: 2299, L: 3199, XL: 3999 }, tag: "Local Specialty" },
+  // Juices
+  { type: "simple", category: "Hunza Fresh Juice", name: "Cherry Juice", price: 499, image: menuDrinks },
+  { type: "simple", category: "Hunza Fresh Juice", name: "Apricot Juice", price: 399 },
+  { type: "simple", category: "Hunza Fresh Juice", name: "Apple Juice", price: 399 },
+  { type: "simple", category: "Hunza Fresh Juice", name: "Sea Buckthorn Juice", price: 699 },
+  { type: "simple", category: "Hunza Fresh Juice", name: "Mix Fruit Juice", price: 499 },
+  // Coffee
+  { type: "simple", category: "Coffee's", name: "Cappuccino", price: 499 },
+  { type: "simple", category: "Coffee's", name: "Black Coffee", price: 299 },
+  { type: "simple", category: "Coffee's", name: "Milk Coffee", price: 399 },
+  { type: "simple", category: "Coffee's", name: "Pamiro Coffee", price: 599 },
+  { type: "simple", category: "Coffee's", name: "Hot Chocolate", price: 499 },
+  // Pasta
+  { type: "simple", category: "Pasta's", name: "Chicken Pasta", price: 999, image: menuSides },
+  { type: "simple", category: "Pasta's", name: "Yak Pasta", price: 1399 },
+  { type: "simple", category: "Pasta's", name: "Chicken Lasange", price: 999 },
+  { type: "simple", category: "Pasta's", name: "Yak Lasange", price: 1499 },
+  // Sandwiches
+  { type: "simple", category: "Sandwiches", name: "Pamiro Sandwich", price: 999 },
+  { type: "simple", category: "Sandwiches", name: "Yak Sandwich", price: 1499 },
+  // Appetizer
+  { type: "simple", category: "Appetizer", name: "Chicken Nuggets", variants: [{ name: "5 pcs", price: 499 }, { name: "10 pcs", price: 999 }] },
+  { type: "simple", category: "Appetizer", name: "Cheese Sticks", variants: [{ name: "5 pcs", price: 599 }, { name: "10 pcs", price: 1199 }] },
+  { type: "simple", category: "Appetizer", name: "Garlic Mushrooms", price: 1199 },
+  { type: "simple", category: "Appetizer", name: "Potato Wedges", variants: [{ name: "5 pcs", price: 399 }, { name: "10 pcs", price: 799 }] },
+  { type: "simple", category: "Appetizer", name: "French Fries", variants: [{ name: "Regular", price: 399 }, { name: "Large", price: 799 }], image: menuKids },
+  { type: "simple", category: "Appetizer", name: "Chicken Hot Wings", variants: [{ name: "5 pcs", price: 799 }, { name: "10 pcs", price: 1499 }] },
+  // Beverages
+  { type: "simple", category: "Beverages", name: "Coke", variants: [{ name: "Can", price: 199 }, { name: "1.5 Ltr", price: 299 }] },
+  { type: "simple", category: "Beverages", name: "Fanta", variants: [{ name: "Can", price: 199 }, { name: "1.5 Ltr", price: 299 }] },
+  { type: "simple", category: "Beverages", name: "Sprite", variants: [{ name: "Can", price: 199 }, { name: "1.5 Ltr", price: 299 }] },
+  { type: "simple", category: "Beverages", name: "Mineral Water", variants: [{ name: "500 ml", price: 99 }, { name: "1.5 Ltr", price: 199 }] },
+];
 
 export const galleryImages = [
   { src: galleryFireplace, alt: "Stone fireplace glowing inside the Pizza Pamir dining room" },
