@@ -13,6 +13,7 @@ import menuMalaiBoti from "@/assets/menu-malai-boti.jpg";
 import menuChickenMax from "@/assets/menu-chicken-max.jpg";
 import menuFriends from "@/assets/menu-friends.jpg";
 import menuArabicGr from "@/assets/menu-arabic-gr.jpg";
+import menuKingSupreme from "@/assets/menu-king-supreme.jpg";
 import galleryFireplace from "@/assets/gallery-fireplace.jpg";
 import galleryOutdoor from "@/assets/gallery-outdoor.jpg";
 import galleryMaking from "@/assets/gallery-making.jpg";
@@ -173,7 +174,7 @@ export const menuItems: AnyMenuItem[] = [
   { type: "pizza", category: "Premium Pizza's", name: "Arabic Gr", description: "Green Sauce, Grilled Chicken Tomato, Green Onion & Lot of Cheese", prices: { S: 1099, M: 1799, L: 2599, XL: 3299 }, image: menuArabicGr },
   // Special
   { type: "pizza", category: "Special Pizza's", name: "Pamir's Special", description: "Special Herbs Sauce, Onion, Green Pepper, Grilled Chicken, Smoked Chicken, Mushrooms, Tomato & Lot of Cheese", prices: { S: 1299, M: 1999, L: 2899, XL: 3699 }, tag: "Chef's Special", image: menuSpecial },
-  { type: "pizza", category: "Special Pizza's", name: "King Supreme", description: "Grilled Chicken, Sausages, Smoke Chicken, Onion Bell Pepper, Mushrooms, Black Olives & Lot of Cheese", prices: { S: 1299, M: 1999, L: 2899, XL: 3699 } },
+  { type: "pizza", category: "Special Pizza's", name: "King Supreme", description: "Grilled Chicken, Sausages, Smoke Chicken, Onion Bell Pepper, Mushrooms, Black Olives & Lot of Cheese", prices: { S: 1299, M: 1999, L: 2899, XL: 3699 }, image: menuKingSupreme },
   { type: "pizza", category: "Special Pizza's", name: "Pamir Alfal", description: "Special Pamiri Sauce, Afghani Chicken, Jalapeno Onion, Green Pepper, Black Olives & Lot of Cheese", prices: { S: 1299, M: 1999, L: 2899, XL: 3699 } },
   { type: "pizza", category: "Special Pizza's", name: "Kabab Chaska Pizza", description: "Onion, Green Pepper, Kabab, Chicken Tikka, Black Olives & Lot of Cheese", prices: { S: 1299, M: 1999, L: 2899, XL: 3699 } },
   { type: "pizza", category: "Special Pizza's", name: "Yak Pizza", description: "Grilled Yak Meat, Yak Smoked Beef, Yellow Tomato, Mushrooms, Green Pepper & Lot of Cheese", prices: { S: 1499, M: 2299, L: 3199, XL: 3999 }, tag: "Local Specialty" },
