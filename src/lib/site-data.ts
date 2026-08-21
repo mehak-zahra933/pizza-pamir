@@ -22,6 +22,7 @@ import menuApricot from "@/assets/menu-apricot.jpg";
 import menuApple from "@/assets/menu-apple.jpg";
 import menuSeaBuckthorn from "@/assets/menu-sea-buckthorn.jpg";
 import menuMixFruit from "@/assets/menu-mix-fruit.jpg";
+import menuChickenTikka from "@/assets/menu-chicken-tikka.jpg";
 import galleryFireplace from "@/assets/gallery-fireplace.jpg";
 import galleryOutdoor from "@/assets/gallery-outdoor.jpg";
 import galleryMaking from "@/assets/gallery-making.jpg";
@@ -167,7 +168,7 @@ export const extraToppings: ExtraToppingItem[] = [
 
 export const menuItems: AnyMenuItem[] = [
   // Classic
-  { type: "pizza", category: "Classic Pizza's", name: "Chicken Tikka", description: "Onion, Tikka Boti & Lot of Cheese", prices: { S: 899, M: 1499, L: 2199, XL: 2899 }, image: menuClassic },
+  { type: "pizza", category: "Classic Pizza's", name: "Chicken Tikka", description: "Onion, Tikka Boti & Lot of Cheese", prices: { S: 899, M: 1499, L: 2199, XL: 2899 }, image: menuChickenTikka },
   { type: "pizza", category: "Classic Pizza's", name: "Chicken Fajita", description: "Onion, Green Pepper, Fajita Chicken & Lot of Cheese", prices: { S: 899, M: 1499, L: 2199, XL: 2899 } },
   { type: "pizza", category: "Classic Pizza's", name: "Hot & Spicy Pizza", description: "Masala & Cholon, Onion, Jalapeno, Tomato & Lot of Cheese", prices: { S: 899, M: 1499, L: 2199, XL: 2899 } },
   { type: "pizza", category: "Classic Pizza's", name: "Vegetable Pizza", description: "Onion, Mushrooms, Bell Pepper, Tomato, Sweet Corn, Black Olives & Lots of Cheese", prices: { S: 799, M: 1299, L: 1899, XL: 2499 }, tag: "Veg" },
