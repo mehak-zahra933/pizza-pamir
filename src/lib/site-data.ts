@@ -16,6 +16,7 @@ import menuArabicGr from "@/assets/menu-arabic-gr.jpg";
 import menuKingSupreme from "@/assets/menu-king-supreme.jpg";
 import menuPamirAfghan from "@/assets/menu-pamir-afghan.jpg";
 import menuKababChaska from "@/assets/menu-kabab-chaska.jpg";
+import menuYakPizza from "@/assets/menu-yak-pizza.jpg";
 import galleryFireplace from "@/assets/gallery-fireplace.jpg";
 import galleryOutdoor from "@/assets/gallery-outdoor.jpg";
 import galleryMaking from "@/assets/gallery-making.jpg";
@@ -179,7 +180,7 @@ export const menuItems: AnyMenuItem[] = [
   { type: "pizza", category: "Special Pizza's", name: "King Supreme", description: "Grilled Chicken, Sausages, Smoke Chicken, Onion Bell Pepper, Mushrooms, Black Olives & Lot of Cheese", prices: { S: 1299, M: 1999, L: 2899, XL: 3699 }, image: menuKingSupreme },
   { type: "pizza", category: "Special Pizza's", name: "Pamir Afghan", description: "Special Pamiri Sauce, Afghani Chicken, Jalapeno Onion, Green Pepper, Black Olives & Lot of Cheese", prices: { S: 1299, M: 1999, L: 2899, XL: 3699 }, image: menuPamirAfghan },
   { type: "pizza", category: "Special Pizza's", name: "Kabab Chaska Pizza", description: "Onion, Green Pepper, Kabab, Chicken Tikka, Black Olives & Lot of Cheese", prices: { S: 1299, M: 1999, L: 2899, XL: 3699 }, image: menuKababChaska },
-  { type: "pizza", category: "Special Pizza's", name: "Yak Pizza", description: "Grilled Yak Meat, Yak Smoked Beef, Yellow Tomato, Mushrooms, Green Pepper & Lot of Cheese", prices: { S: 1499, M: 2299, L: 3199, XL: 3999 }, tag: "Local Specialty" },
+  { type: "pizza", category: "Special Pizza's", name: "Yak Pizza", description: "Grilled Yak Meat, Yak Smoked Beef, Yellow Tomato, Mushrooms, Green Pepper & Lot of Cheese", prices: { S: 1499, M: 2299, L: 3199, XL: 3999 }, tag: "Local Specialty", image: menuYakPizza },
   // Juices
   { type: "simple", category: "Hunza Fresh Juice", name: "Cherry Juice", price: 499, image: menuDrinks },
   { type: "simple", category: "Hunza Fresh Juice", name: "Apricot Juice", price: 399 },
