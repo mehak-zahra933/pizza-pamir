@@ -18,6 +18,10 @@ import menuPamirAfghan from "@/assets/menu-pamir-afghan.jpg";
 import menuKababChaska from "@/assets/menu-kabab-chaska.jpg";
 import menuYakPizza from "@/assets/menu-yak-pizza.jpg";
 import menuCherry from "@/assets/menu-cherry.jpg";
+import menuApricot from "@/assets/menu-apricot.jpg";
+import menuApple from "@/assets/menu-apple.jpg";
+import menuSeaBuckthorn from "@/assets/menu-sea-buckthorn.jpg";
+import menuMixFruit from "@/assets/menu-mix-fruit.jpg";
 import galleryFireplace from "@/assets/gallery-fireplace.jpg";
 import galleryOutdoor from "@/assets/gallery-outdoor.jpg";
 import galleryMaking from "@/assets/gallery-making.jpg";
@@ -184,10 +188,10 @@ export const menuItems: AnyMenuItem[] = [
   { type: "pizza", category: "Special Pizza's", name: "Yak Pizza", description: "Grilled Yak Meat, Yak Smoked Beef, Yellow Tomato, Mushrooms, Green Pepper & Lot of Cheese", prices: { S: 1499, M: 2299, L: 3199, XL: 3999 }, tag: "Local Specialty", image: menuYakPizza },
   // Juices
   { type: "simple", category: "Hunza Fresh Juice", name: "Cherry Juice", price: 499, image: menuCherry },
-  { type: "simple", category: "Hunza Fresh Juice", name: "Apricot Juice", price: 399 },
-  { type: "simple", category: "Hunza Fresh Juice", name: "Apple Juice", price: 399 },
-  { type: "simple", category: "Hunza Fresh Juice", name: "Sea Buckthorn Juice", price: 699 },
-  { type: "simple", category: "Hunza Fresh Juice", name: "Mix Fruit Juice", price: 499 },
+  { type: "simple", category: "Hunza Fresh Juice", name: "Apricot Juice", price: 399, image: menuApricot },
+  { type: "simple", category: "Hunza Fresh Juice", name: "Apple Juice", price: 399, image: menuApple },
+  { type: "simple", category: "Hunza Fresh Juice", name: "Sea Buckthorn Juice", price: 699, image: menuSeaBuckthorn },
+  { type: "simple", category: "Hunza Fresh Juice", name: "Mix Fruit Juice", price: 499, image: menuMixFruit },
   // Coffee
   { type: "simple", category: "Coffee's", name: "Cappuccino", price: 499 },
   { type: "simple", category: "Coffee's", name: "Black Coffee", price: 299 },
