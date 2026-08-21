@@ -10,6 +10,7 @@ import menuKids from "@/assets/menu-kids.jpg";
 import menuDrinks from "@/assets/menu-drinks.jpg";
 import menuSides from "@/assets/menu-sides.jpg";
 import menuMalaiBoti from "@/assets/menu-malai-boti.jpg";
+import menuChickenMax from "@/assets/menu-chicken-max.jpg";
 import galleryFireplace from "@/assets/gallery-fireplace.jpg";
 import galleryOutdoor from "@/assets/gallery-outdoor.jpg";
 import galleryMaking from "@/assets/gallery-making.jpg";
@@ -165,7 +166,7 @@ export const menuItems: AnyMenuItem[] = [
   { type: "pizza", category: "Classic Pizza's", name: "Pizza on Choice", description: "Topping as per your Request.", prices: { S: 1099, M: 1699, L: 2399, XL: 3099 } },
   // Premium
   { type: "pizza", category: "Premium Pizza's", name: "Malai Boti Pizza", description: "Cream Sauce, Malai Boti Chicken, Smoked Chicken, Green Pepper, Tomatoes & Lot of Cheese", prices: { S: 1099, M: 1799, L: 2599, XL: 3299 }, image: menuMalaiBoti, tag: "New" },
-  { type: "pizza", category: "Premium Pizza's", name: "Chicken Max", description: "Onion, Chicken Tikka, Sausages, Smoked Chicken, Black Olives & Lot of Cheese", prices: { S: 1099, M: 1799, L: 2599, XL: 3299 } },
+  { type: "pizza", category: "Premium Pizza's", name: "Chicken Max", description: "Onion, Chicken Tikka, Sausages, Smoked Chicken, Black Olives & Lot of Cheese", prices: { S: 1099, M: 1799, L: 2599, XL: 3299 }, image: menuChickenMax },
   { type: "pizza", category: "Premium Pizza's", name: "Friends Pizza", description: "Onion Green Pepper, Black Olives, Yak Smoked Beef, Chicken Tikka, Pepperoni Slice & Lot of Cheese", prices: { S: 1199, M: 1899, L: 2799, XL: 3499 }, tag: "Popular", image: menuFamily },
   { type: "pizza", category: "Premium Pizza's", name: "Arabic Gr", description: "Green Sauce, Grilled Chicken Tomato, Green Onion & Lot of Cheese", prices: { S: 1099, M: 1799, L: 2599, XL: 3299 } },
   // Special
