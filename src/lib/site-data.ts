@@ -31,6 +31,11 @@ import menuBlackCoffee from "@/assets/menu-black-coffee.png";
 import menuMilkCoffee from "@/assets/menu-milk-coffee.png";
 import menuPamiroCoffee from "@/assets/menu-pamiro-coffee.png";
 import menuHotChocolate from "@/assets/menu-hot-chocolate.png";
+import menuChickenNuggets from "@/assets/menu-chicken-nuggets.jpg";
+import menuCheeseSticks from "@/assets/menu-cheese-sticks.jpg";
+import menuGarlicMushrooms from "@/assets/menu-garlic-mushrooms.png";
+import menuPotatoWedges from "@/assets/menu-potato-wedges.jpg";
+import menuFrenchFries from "@/assets/menu-french-fries.jpg";
 import galleryFireplace from "@/assets/gallery-fireplace.jpg";
 import galleryOutdoor from "@/assets/gallery-outdoor.jpg";
 import galleryMaking from "@/assets/gallery-making.jpg";
@@ -216,11 +221,11 @@ export const menuItems: AnyMenuItem[] = [
   { type: "simple", category: "Sandwiches", name: "Pamiro Sandwich", price: 999 },
   { type: "simple", category: "Sandwiches", name: "Yak Sandwich", price: 1499 },
   // Appetizer
-  { type: "simple", category: "Appetizer", name: "Chicken Nuggets", variants: [{ name: "5 pcs", price: 499 }, { name: "10 pcs", price: 999 }] },
-  { type: "simple", category: "Appetizer", name: "Cheese Sticks", variants: [{ name: "5 pcs", price: 599 }, { name: "10 pcs", price: 1199 }] },
-  { type: "simple", category: "Appetizer", name: "Garlic Mushrooms", price: 1199 },
-  { type: "simple", category: "Appetizer", name: "Potato Wedges", variants: [{ name: "5 pcs", price: 399 }, { name: "10 pcs", price: 799 }] },
-  { type: "simple", category: "Appetizer", name: "French Fries", variants: [{ name: "Regular", price: 399 }, { name: "Large", price: 799 }], image: menuKids },
+  { type: "simple", category: "Appetizer", name: "Chicken Nuggets", variants: [{ name: "5 pcs", price: 499 }, { name: "10 pcs", price: 999 }], image: menuChickenNuggets },
+  { type: "simple", category: "Appetizer", name: "Cheese Sticks", variants: [{ name: "5 pcs", price: 599 }, { name: "10 pcs", price: 1199 }], image: menuCheeseSticks },
+  { type: "simple", category: "Appetizer", name: "Garlic Mushrooms", price: 1199, image: menuGarlicMushrooms },
+  { type: "simple", category: "Appetizer", name: "Potato Wedges", variants: [{ name: "5 pcs", price: 399 }, { name: "10 pcs", price: 799 }], image: menuPotatoWedges },
+  { type: "simple", category: "Appetizer", name: "French Fries", variants: [{ name: "Regular", price: 399 }, { name: "Large", price: 799 }], image: menuFrenchFries },
   { type: "simple", category: "Appetizer", name: "Chicken Hot Wings", variants: [{ name: "5 pcs", price: 799 }, { name: "10 pcs", price: 1499 }] },
   // Beverages
   { type: "simple", category: "Beverages", name: "Coke", variants: [{ name: "Can", price: 199 }, { name: "1.5 Ltr", price: 299 }] },
