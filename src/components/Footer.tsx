@@ -1,5 +1,6 @@
 import { Facebook, Instagram, MessageCircle, Phone } from "lucide-react";
 import { locations, PHONE_LINK, WHATSAPP_LINK, WHATSAPP_NUMBER } from "@/lib/site-data";
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   return (
@@ -7,9 +8,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <p className="font-display text-3xl text-cream">
-              Pizza <span className="italic">Pamir</span>
-            </p>
+            <img src={logo} alt="Pizza Pamir" className="h-16 w-auto object-contain" />
             <p className="mt-4 max-w-xs font-display text-lg leading-relaxed text-cream/70 italic">
               "Good pizza. Great mountains. Even better memories."
             </p>
@@ -24,14 +23,18 @@ export function Footer() {
                 <MessageCircle className="size-4" aria-hidden="true" />
               </a>
               <a
-                href="#contact"
+                href="https://www.instagram.com/pizzapamir1?igsi=MWEwMHM1N2NidDdudg=="
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="inline-flex size-11 items-center justify-center rounded-full border border-cream/20 text-cream transition-colors hover:border-accent hover:text-accent"
               >
                 <Instagram className="size-4" aria-hidden="true" />
               </a>
               <a
-                href="#contact"
+                href="https://m.facebook.com/408679419466532/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
                 className="inline-flex size-11 items-center justify-center rounded-full border border-cream/20 text-cream transition-colors hover:border-accent hover:text-accent"
               >
