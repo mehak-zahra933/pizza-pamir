@@ -26,6 +26,11 @@ import menuChickenTikka from "@/assets/menu-chicken-tikka.jpg";
 import menuChickenFajita from "@/assets/menu-chicken-fajita.jpg";
 import menuHotSpicy from "@/assets/menu-hot-spicy.jpg";
 import menuVegetable from "@/assets/menu-vegetable.jpg";
+import menuCappuccino from "@/assets/menu-cappuccino.png";
+import menuBlackCoffee from "@/assets/menu-black-coffee.png";
+import menuMilkCoffee from "@/assets/menu-milk-coffee.png";
+import menuPamiroCoffee from "@/assets/menu-pamiro-coffee.png";
+import menuHotChocolate from "@/assets/menu-hot-chocolate.png";
 import galleryFireplace from "@/assets/gallery-fireplace.jpg";
 import galleryOutdoor from "@/assets/gallery-outdoor.jpg";
 import galleryMaking from "@/assets/gallery-making.jpg";
@@ -197,11 +202,11 @@ export const menuItems: AnyMenuItem[] = [
   { type: "simple", category: "Hunza Fresh Juice", name: "Sea Buckthorn Juice", price: 699, image: menuSeaBuckthorn },
   { type: "simple", category: "Hunza Fresh Juice", name: "Mix Fruit Juice", price: 499, image: menuMixFruit },
   // Coffee
-  { type: "simple", category: "Coffee's", name: "Cappuccino", price: 499 },
-  { type: "simple", category: "Coffee's", name: "Black Coffee", price: 299 },
-  { type: "simple", category: "Coffee's", name: "Milk Coffee", price: 399 },
-  { type: "simple", category: "Coffee's", name: "Pamiro Coffee", price: 599 },
-  { type: "simple", category: "Coffee's", name: "Hot Chocolate", price: 499 },
+  { type: "simple", category: "Coffee's", name: "Cappuccino", price: 499, image: menuCappuccino },
+  { type: "simple", category: "Coffee's", name: "Black Coffee", price: 299, image: menuBlackCoffee },
+  { type: "simple", category: "Coffee's", name: "Milk Coffee", price: 399, image: menuMilkCoffee },
+  { type: "simple", category: "Coffee's", name: "Pamiro Coffee", price: 599, image: menuPamiroCoffee },
+  { type: "simple", category: "Coffee's", name: "Hot Chocolate", price: 499, image: menuHotChocolate },
   // Pasta
   { type: "simple", category: "Pasta's", name: "Chicken Pasta", price: 999, image: menuSides },
   { type: "simple", category: "Pasta's", name: "Yak Pasta", price: 1399 },
