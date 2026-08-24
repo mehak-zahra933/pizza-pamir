@@ -36,6 +36,10 @@ import menuCheeseSticks from "@/assets/menu-cheese-sticks.jpg";
 import menuGarlicMushrooms from "@/assets/menu-garlic-mushrooms.png";
 import menuPotatoWedges from "@/assets/menu-potato-wedges.jpg";
 import menuFrenchFries from "@/assets/menu-french-fries.jpg";
+import menuChickenHotWings from "@/assets/menu-chicken-hot-wings.png";
+import menuYakPasta from "@/assets/menu-yak-pasta.png";
+import menuChickenLasange from "@/assets/menu-chicken-lasange.jpg";
+import menuYakLasange from "@/assets/menu-yak-lasange.png";
 import galleryFireplace from "@/assets/gallery-fireplace.jpg";
 import galleryOutdoor from "@/assets/gallery-outdoor.jpg";
 import galleryMaking from "@/assets/gallery-making.jpg";
@@ -214,9 +218,9 @@ export const menuItems: AnyMenuItem[] = [
   { type: "simple", category: "Coffee's", name: "Hot Chocolate", price: 499, image: menuHotChocolate },
   // Pasta
   { type: "simple", category: "Pasta's", name: "Chicken Pasta", price: 999, image: menuSides },
-  { type: "simple", category: "Pasta's", name: "Yak Pasta", price: 1399 },
-  { type: "simple", category: "Pasta's", name: "Chicken Lasange", price: 999 },
-  { type: "simple", category: "Pasta's", name: "Yak Lasange", price: 1499 },
+  { type: "simple", category: "Pasta's", name: "Yak Pasta", price: 1399, image: menuYakPasta },
+  { type: "simple", category: "Pasta's", name: "Chicken Lasange", price: 999, image: menuChickenLasange },
+  { type: "simple", category: "Pasta's", name: "Yak Lasange", price: 1499, image: menuYakLasange },
   // Sandwiches
   { type: "simple", category: "Sandwiches", name: "Pamiro Sandwich", price: 999 },
   { type: "simple", category: "Sandwiches", name: "Yak Sandwich", price: 1499 },
@@ -226,7 +230,7 @@ export const menuItems: AnyMenuItem[] = [
   { type: "simple", category: "Appetizer", name: "Garlic Mushrooms", price: 1199, image: menuGarlicMushrooms },
   { type: "simple", category: "Appetizer", name: "Potato Wedges", variants: [{ name: "5 pcs", price: 399 }, { name: "10 pcs", price: 799 }], image: menuPotatoWedges },
   { type: "simple", category: "Appetizer", name: "French Fries", variants: [{ name: "Regular", price: 399 }, { name: "Large", price: 799 }], image: menuFrenchFries },
-  { type: "simple", category: "Appetizer", name: "Chicken Hot Wings", variants: [{ name: "5 pcs", price: 799 }, { name: "10 pcs", price: 1499 }] },
+  { type: "simple", category: "Appetizer", name: "Chicken Hot Wings", variants: [{ name: "5 pcs", price: 799 }, { name: "10 pcs", price: 1499 }], image: menuChickenHotWings },
   // Beverages
   { type: "simple", category: "Beverages", name: "Coke", variants: [{ name: "Can", price: 199 }, { name: "1.5 Ltr", price: 299 }] },
   { type: "simple", category: "Beverages", name: "Fanta", variants: [{ name: "Can", price: 199 }, { name: "1.5 Ltr", price: 299 }] },
