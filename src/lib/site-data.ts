@@ -45,6 +45,10 @@ import menuChickenPepperoni from "@/assets/menu-chicken-pepperoni.png";
 import menuCheesyPamir from "@/assets/menu-cheesy-pamir.jpg";
 import menuPamiroSandwich from "@/assets/menu-pamiro-sandwich.jpg";
 import menuYakSandwich from "@/assets/menu-yak-sandwich.jpg";
+import menuCoke from "@/assets/menu-coke.png";
+import menuFanta from "@/assets/menu-fanta.png";
+import menuSprite from "@/assets/menu-sprite.png";
+import menuMineralWater from "@/assets/menu-mineral-water.png";
 import galleryFireplace from "@/assets/gallery-fireplace.jpg";
 import galleryOutdoor from "@/assets/gallery-outdoor.jpg";
 import galleryMaking from "@/assets/gallery-making.jpg";
@@ -240,10 +244,10 @@ export const menuItems: AnyMenuItem[] = [
   { type: "simple", category: "Appetizer", name: "French Fries", variants: [{ name: "Regular", price: 399 }, { name: "Large", price: 799 }], image: menuFrenchFries },
   { type: "simple", category: "Appetizer", name: "Chicken Hot Wings", variants: [{ name: "5 pcs", price: 799 }, { name: "10 pcs", price: 1499 }], image: menuChickenHotWings },
   // Beverages
-  { type: "simple", category: "Beverages", name: "Coke", variants: [{ name: "Can", price: 199 }, { name: "1.5 Ltr", price: 299 }] },
-  { type: "simple", category: "Beverages", name: "Fanta", variants: [{ name: "Can", price: 199 }, { name: "1.5 Ltr", price: 299 }] },
-  { type: "simple", category: "Beverages", name: "Sprite", variants: [{ name: "Can", price: 199 }, { name: "1.5 Ltr", price: 299 }] },
-  { type: "simple", category: "Beverages", name: "Mineral Water", variants: [{ name: "500 ml", price: 99 }, { name: "1.5 Ltr", price: 199 }] },
+  { type: "simple", category: "Beverages", name: "Coke", variants: [{ name: "Can", price: 199 }, { name: "1.5 Ltr", price: 299 }], image: menuCoke },
+  { type: "simple", category: "Beverages", name: "Fanta", variants: [{ name: "Can", price: 199 }, { name: "1.5 Ltr", price: 299 }], image: menuFanta },
+  { type: "simple", category: "Beverages", name: "Sprite", variants: [{ name: "Can", price: 199 }, { name: "1.5 Ltr", price: 299 }], image: menuSprite },
+  { type: "simple", category: "Beverages", name: "Mineral Water", variants: [{ name: "500 ml", price: 99 }, { name: "1.5 Ltr", price: 199 }], image: menuMineralWater },
 ];
 
 export const galleryImages = [
