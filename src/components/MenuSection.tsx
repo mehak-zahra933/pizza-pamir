@@ -1,4 +1,4 @@
-﻿import { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import { Plus, Search, Pizza, CupSoda, Coffee, UtensilsCrossed, Sandwich, Flame, GlassWater } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/Reveal";
@@ -88,7 +88,7 @@ function SimpleItemCard({ item }: { item: SimpleMenuItem }) {
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 mb-1">
           {!item.image && categoryIcons[item.category]}
-          <h3 className="font-display text-lg truncate">{item.name}</h3>
+          <h3 className="font-display text-lg leading-snug">{item.name}</h3>
         </div>
         {item.description && <p className="text-sm text-muted-foreground truncate">{item.description}</p>}
         
