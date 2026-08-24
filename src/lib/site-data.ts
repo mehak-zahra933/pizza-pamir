@@ -42,6 +42,7 @@ import menuChickenLasange from "@/assets/menu-chicken-lasange.jpg";
 import menuYakLasange from "@/assets/menu-yak-lasange.png";
 import menuBeefPepperoni from "@/assets/menu-beef-pepperoni.png";
 import menuChickenPepperoni from "@/assets/menu-chicken-pepperoni.png";
+import menuCheesyPamir from "@/assets/menu-cheesy-pamir.jpg";
 import galleryFireplace from "@/assets/gallery-fireplace.jpg";
 import galleryOutdoor from "@/assets/gallery-outdoor.jpg";
 import galleryMaking from "@/assets/gallery-making.jpg";
@@ -193,7 +194,7 @@ export const menuItems: AnyMenuItem[] = [
   { type: "pizza", category: "Classic Pizza's", name: "Vegetable Pizza", description: "Onion, Mushrooms, Bell Pepper, Tomato, Sweet Corn, Black Olives & Lots of Cheese", prices: { S: 799, M: 1299, L: 1899, XL: 2499 }, tag: "Veg", image: menuVegetable },
   { type: "pizza", category: "Classic Pizza's", name: "Beef Pepperoni", description: "Pepperoni Slice with Lot of Cheese", prices: { S: 999, M: 1599, L: 2299, XL: 2999 }, image: menuBeefPepperoni },
   { type: "pizza", category: "Classic Pizza's", name: "Chicken Pepperoni", description: "Pepperoni Slice with Lot of Cheese", prices: { S: 899, M: 1499, L: 2199, XL: 2899 }, image: menuChickenPepperoni },
-  { type: "pizza", category: "Classic Pizza's", name: "Cheesy Pamir (for Cheese Lover)", description: "Lot of Cheese", prices: { S: 999, M: 1599, L: 2299, XL: 2999 } },
+  { type: "pizza", category: "Classic Pizza's", name: "Cheesy Pamir (for Cheese Lover)", description: "Lot of Cheese", prices: { S: 999, M: 1599, L: 2299, XL: 2999 }, image: menuCheesyPamir },
   { type: "pizza", category: "Classic Pizza's", name: "Pizza on Choice", description: "Topping as per your Request.", prices: { S: 1099, M: 1699, L: 2399, XL: 3099 } },
   // Premium
   { type: "pizza", category: "Premium Pizza's", name: "Malai Boti Pizza", description: "Cream Sauce, Malai Boti Chicken, Smoked Chicken, Green Pepper, Tomatoes & Lot of Cheese", prices: { S: 1099, M: 1799, L: 2599, XL: 3299 }, image: menuMalaiBoti, tag: "New" },
