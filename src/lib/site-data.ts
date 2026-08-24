@@ -25,6 +25,7 @@ import menuMixFruit from "@/assets/menu-mix-fruit.jpg";
 import menuChickenTikka from "@/assets/menu-chicken-tikka.jpg";
 import menuChickenFajita from "@/assets/menu-chicken-fajita.jpg";
 import menuHotSpicy from "@/assets/menu-hot-spicy.jpg";
+import menuVegetable from "@/assets/menu-vegetable.jpg";
 import galleryFireplace from "@/assets/gallery-fireplace.jpg";
 import galleryOutdoor from "@/assets/gallery-outdoor.jpg";
 import galleryMaking from "@/assets/gallery-making.jpg";
@@ -173,7 +174,7 @@ export const menuItems: AnyMenuItem[] = [
   { type: "pizza", category: "Classic Pizza's", name: "Chicken Tikka", description: "Onion, Tikka Boti & Lot of Cheese", prices: { S: 899, M: 1499, L: 2199, XL: 2899 }, image: menuChickenTikka },
   { type: "pizza", category: "Classic Pizza's", name: "Chicken Fajita", description: "Onion, Green Pepper, Fajita Chicken & Lot of Cheese", prices: { S: 899, M: 1499, L: 2199, XL: 2899 }, image: menuChickenFajita },
   { type: "pizza", category: "Classic Pizza's", name: "Hot & Spicy Pizza", description: "Masala & Cholon, Onion, Jalapeno, Tomato & Lot of Cheese", prices: { S: 899, M: 1499, L: 2199, XL: 2899 }, image: menuHotSpicy },
-  { type: "pizza", category: "Classic Pizza's", name: "Vegetable Pizza", description: "Onion, Mushrooms, Bell Pepper, Tomato, Sweet Corn, Black Olives & Lots of Cheese", prices: { S: 799, M: 1299, L: 1899, XL: 2499 }, tag: "Veg" },
+  { type: "pizza", category: "Classic Pizza's", name: "Vegetable Pizza", description: "Onion, Mushrooms, Bell Pepper, Tomato, Sweet Corn, Black Olives & Lots of Cheese", prices: { S: 799, M: 1299, L: 1899, XL: 2499 }, tag: "Veg", image: menuVegetable },
   { type: "pizza", category: "Classic Pizza's", name: "Beef Pepperoni", description: "Pepperoni Slice with Lot of Cheese", prices: { S: 999, M: 1599, L: 2299, XL: 2999 } },
   { type: "pizza", category: "Classic Pizza's", name: "Chicken Pepperoni", description: "Pepperoni Slice with Lot of Cheese", prices: { S: 899, M: 1499, L: 2199, XL: 2899 } },
   { type: "pizza", category: "Classic Pizza's", name: "Cheesy Pamir (for Cheese Lover)", description: "Lot of Cheese", prices: { S: 999, M: 1599, L: 2299, XL: 2999 } },
