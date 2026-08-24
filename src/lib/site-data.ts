@@ -43,6 +43,7 @@ import menuYakLasange from "@/assets/menu-yak-lasange.png";
 import menuBeefPepperoni from "@/assets/menu-beef-pepperoni.png";
 import menuChickenPepperoni from "@/assets/menu-chicken-pepperoni.png";
 import menuCheesyPamir from "@/assets/menu-cheesy-pamir.jpg";
+import menuPamiroSandwich from "@/assets/menu-pamiro-sandwich.jpg";
 import galleryFireplace from "@/assets/gallery-fireplace.jpg";
 import galleryOutdoor from "@/assets/gallery-outdoor.jpg";
 import galleryMaking from "@/assets/gallery-making.jpg";
@@ -225,7 +226,7 @@ export const menuItems: AnyMenuItem[] = [
   { type: "simple", category: "Pasta's", name: "Chicken Lasange", price: 999, image: menuChickenLasange },
   { type: "simple", category: "Pasta's", name: "Yak Lasange", price: 1499, image: menuYakLasange },
   // Sandwiches
-  { type: "simple", category: "Sandwiches", name: "Pamiro Sandwich", price: 999 },
+  { type: "simple", category: "Sandwiches", name: "Pamiro Sandwich", price: 999, image: menuPamiroSandwich },
   { type: "simple", category: "Sandwiches", name: "Yak Sandwich", price: 1499 },
   // Appetizer
   { type: "simple", category: "Appetizer", name: "Chicken Nuggets", variants: [{ name: "5 pcs", price: 499 }, { name: "10 pcs", price: 999 }], image: menuChickenNuggets },
