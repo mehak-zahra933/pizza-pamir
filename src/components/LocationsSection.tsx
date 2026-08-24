@@ -1,7 +1,7 @@
 import { Clock, MapPin, Phone, Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/Reveal";
-import { locations, PHONE_LINK } from "@/lib/site-data";
+import { locations, PHONE_LINK, WHATSAPP_LINK } from "@/lib/site-data";
 
 export function LocationsSection() {
   return (
@@ -79,11 +79,13 @@ export function LocationsSection() {
                       Get Directions
                     </a>
                     <a
-                      href={PHONE_LINK}
+                      href={loc.whatsapp ?? WHATSAPP_LINK}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-full border border-border px-6 text-sm font-medium transition-colors duration-300 hover:border-accent hover:text-accent"
                     >
                       <Phone className="size-4" aria-hidden="true" />
-                      Call
+                      Order
                     </a>
                   </div>
                 </div>

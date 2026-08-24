@@ -67,6 +67,7 @@ export type Location = {
   description: string;
   image: string;
   maps: string;
+  whatsapp?: string;
   scenic?: boolean;
 };
 
@@ -78,11 +79,12 @@ export const locations: Location[] = [
     address: "Fort Road, near Fort Chowk, Karimabad, Hunza",
     rating: 4.5,
     reviews: 530,
-    hours: "Open daily · 11:00 – 23:00",
+    hours: "Open 24 hours",
     description:
       "Our first oven, tucked below Baltit Fort. Stone walls, apricot trees and the smell of fresh dough drifting down Fort Road.",
     image: locKarimabad,
     maps: "https://www.google.com/maps/search/?api=1&query=Pizza+Pamir+Karimabad+Hunza",
+    whatsapp: "https://wa.me/923410230213?text=" + encodeURIComponent("Assalam o Alaikum! I'd like to order from Pizza Pamir Karimabad."),
   },
   {
     id: "aliabad",
@@ -91,11 +93,12 @@ export const locations: Location[] = [
     address: "College Chowk, Aliabad, Hunza",
     rating: 4.3,
     reviews: 370,
-    hours: "Open daily · 11:00 – 23:30",
+    hours: "Open 24 hours",
     description:
       "The valley's meeting point. Big tables, late hours and the busiest all-you-can-eat nights in Hunza.",
     image: locAliabad,
     maps: "https://www.google.com/maps/search/?api=1&query=Pizza+Pamir+Aliabad+Hunza",
+    whatsapp: "https://wa.me/923410230213?text=" + encodeURIComponent("Assalam o Alaikum! I'd like to order from Pizza Pamir Aliabad."),
   },
   {
     id: "attabad",
