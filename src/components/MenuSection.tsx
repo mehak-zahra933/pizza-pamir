@@ -79,17 +79,18 @@ function SimpleItemCard({ item }: { item: SimpleMenuItem }) {
   const orderLink = generateOrderLink(item.name, detail, price);
 
   return (
-    <article className="group flex items-center gap-4 shadow-card rounded-2xl border border-border/70 bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lift">
-      {item.image && (
-        <div className="relative h-20 w-20 overflow-hidden shrink-0 rounded-xl">
+    <article className="group flex items-center gap-4 shadow-card h-full rounded-2xl border border-border/70 bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lift">
+      <div className="relative h-20 w-20 overflow-hidden shrink-0 rounded-xl bg-muted">
+        {item.image ? (
           <img src={item.image} alt={item.name} loading="lazy" className="size-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" />
-        </div>
-      )}
+        ) : (
+          <div className="size-full flex items-center justify-center text-muted-foreground">
+            {categoryIcons[item.category]}
+          </div>
+        )}
+      </div>
       <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-2 mb-1">
-          {!item.image && categoryIcons[item.category]}
-          <h3 className="font-display text-lg leading-snug">{item.name}</h3>
-        </div>
+        <h3 className="font-display text-lg leading-snug">{item.name}</h3>
         {item.description && <p className="text-sm text-muted-foreground truncate">{item.description}</p>}
         
         {item.variants && (
@@ -193,13 +194,13 @@ export function MenuSection() {
           {filteredItems.length === 0 ? (
             <div className="text-center py-20 text-muted-foreground">No items found.</div>
           ) : (
-            <div className={cn("grid gap-6", 
+            <div className={cn("grid gap-6 items-stretch", 
               filteredItems.some(i => i.type === "pizza") 
                 ? "sm:grid-cols-2 lg:grid-cols-3" 
                 : "sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
             )}>
               {filteredItems.map((item, i) => (
-                <Reveal as="div" key={item.name} delay={i * 50}>
+                <Reveal as="div" key={item.name} delay={i * 50} className="h-full">
                   {item.type === "pizza" ? (
                     <PizzaCard item={item as PizzaItem} />
                   ) : (
