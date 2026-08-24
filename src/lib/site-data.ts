@@ -50,11 +50,11 @@ import galleryMaking from "@/assets/gallery-making.jpg";
 import galleryFamily from "@/assets/gallery-family.jpg";
 import heroHunza from "@/assets/hero-hunza.jpg";
 
-export const WHATSAPP_NUMBER = "+92 343 8820781";
+export const WHATSAPP_NUMBER = "+92 341 0230213";
 export const WHATSAPP_LINK =
-  "https://wa.me/923438820781?text=" +
+  "https://wa.me/923410230213?text=" +
   encodeURIComponent("Assalam o Alaikum! I'd like to order from Pizza Pamir.");
-export const PHONE_LINK = "tel:+923438820781";
+export const PHONE_LINK = "tel:+923410230213";
 
 export type Location = {
   id: string;
@@ -107,7 +107,7 @@ export const locations: Location[] = [
     address: "Main Boat Stand, Attabad Lake, Gojal, Hunza",
     rating: 4.5,
     reviews: 84,
-    hours: "Open daily · 10:00 – 22:00",
+    hours: "Open 24 hours",
     description:
       "Turquoise water on one side, hot pizza on the other. Step off the boats and straight onto our terrace.",
     image: locAttabad,
@@ -121,7 +121,7 @@ export const locations: Location[] = [
     address: "N-35 Karakoram Highway, Gojal, Hunza Nagar",
     rating: 4.5,
     reviews: 28,
-    hours: "Open daily · 11:00 – 22:00",
+    hours: "Open 24 hours",
     description:
       "The last warm stop before the high passes. Fireplace on, kettle boiling, road dust welcome.",
     image: locGojal,
@@ -134,7 +134,7 @@ export const locations: Location[] = [
     address: "Tashkurgan Food Street, Xinjiang, China",
     rating: 4.8,
     reviews: 15,
-    hours: "Open daily · 11:00 – 22:00",
+    hours: "Open 24 hours",
     description: "Branch No. 05. Bringing the authentic taste of Pizza Pamir across the border to the historic Silk Road.",
     image: locTashkurgan,
     maps: "https://www.google.com/maps/search/?api=1&query=Tashkurgan+Food+Street+Xinjiang",

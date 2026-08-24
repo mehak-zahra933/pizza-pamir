@@ -110,7 +110,7 @@ export function Footer() {
                   {WHATSAPP_NUMBER}
                 </a>
               </li>
-              <li className="pt-2 text-cream/55">Open daily · 10:00 – 23:30</li>
+              <li className="pt-2 text-cream/55">Open 24 hours</li>
               <li className="text-cream/55">Rs 1,000 – 3,000 per person</li>
             </ul>
           </div>
