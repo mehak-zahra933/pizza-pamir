@@ -26,10 +26,11 @@ export function Hero() {
         alt="Fresh pizza with Passu Cones and Karakoram mountain views at Pizza Pamir"
         width={1920}
         height={1088}
-        className="absolute inset-0 size-full object-cover object-bottom"
+        className="absolute inset-0 size-full object-cover"
         style={{
-          transform: `translate3d(0, ${offset * 0.12}px, 0) scale(1.45)`,
-          transformOrigin: "center 78%",
+          objectPosition: "center 88%",
+          transform: `translate3d(0, ${offset * 0.12}px, 0) scale(1.42)`,
+          transformOrigin: "center 90%",
         }}
       />
       <div className="hero-scrim absolute inset-0" />
