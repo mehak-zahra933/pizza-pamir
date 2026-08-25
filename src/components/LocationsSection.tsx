@@ -1,7 +1,7 @@
-import { Clock, MapPin, Phone, Star } from "lucide-react";
+import { ChevronRight, Clock, MapPin, Phone, Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/Reveal";
-import { locations, PHONE_LINK, WHATSAPP_LINK } from "@/lib/site-data";
+import { locations, WHATSAPP_LINK } from "@/lib/site-data";
 
 export function LocationsSection() {
   return (
@@ -17,13 +17,19 @@ export function LocationsSection() {
           </p>
         </Reveal>
 
-        <div className="no-scrollbar -mx-5 mt-12 flex snap-x snap-mandatory gap-5 overflow-x-auto px-5 pb-4 sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 sm:pb-0">
+        {/* Mobile swipe hint — hidden on sm+ */}
+        <div className="mt-6 flex items-center gap-2 text-sm text-muted-foreground sm:hidden">
+          <span>Swipe to explore all {locations.length} locations</span>
+          <ChevronRight className="size-4 text-accent animate-bounce-x" aria-hidden="true" />
+        </div>
+
+        <div className="no-scrollbar -mx-5 mt-4 flex snap-x snap-mandatory gap-5 overflow-x-auto px-5 pb-4 sm:mx-0 sm:mt-12 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 sm:pb-0">
           {locations.map((loc, i) => (
             <Reveal
               key={loc.id}
               delay={i * 90}
               className={cn(
-                "w-[82vw] shrink-0 snap-center sm:w-auto",
+                "w-[78vw] shrink-0 snap-center sm:w-auto",
                 loc.scenic && "sm:col-span-2",
               )}
             >
@@ -91,6 +97,16 @@ export function LocationsSection() {
                 </div>
               </article>
             </Reveal>
+          ))}
+        </div>
+
+        {/* Scroll dot indicators — mobile only */}
+        <div className="mt-4 flex justify-center gap-1.5 sm:hidden" aria-hidden="true">
+          {locations.map((loc) => (
+            <span
+              key={loc.id}
+              className="h-1.5 w-4 rounded-full bg-accent/30 first:bg-accent"
+            />
           ))}
         </div>
       </div>
