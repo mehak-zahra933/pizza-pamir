@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { ArrowDown } from "lucide-react";
-import heroHunza from "@/assets/hero-hunza.jpg";
+import heroPamir from "@/assets/hero-pizza-mountains.png.asset.json";
+
+const heroHunza = heroPamir.url;
 
 export function Hero() {
   const [offset, setOffset] = useState(0);
@@ -23,7 +25,7 @@ export function Hero() {
     <section id="top" className="relative min-h-[100svh] overflow-hidden surface-dark">
       <img
         src={heroHunza}
-        alt="Golden sunset over the Karakoram peaks above Hunza valley"
+        alt="Fresh Pizza Pamir pizza in an open box with the Karakoram mountain range behind it"
         width={1920}
         height={1088}
         className="absolute inset-0 size-full scale-110 object-cover"
