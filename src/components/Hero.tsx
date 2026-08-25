@@ -25,7 +25,7 @@ export function Hero() {
     <section id="top" className="relative min-h-[100svh] overflow-hidden surface-dark">
       <img
         src={heroHunza}
-        alt="Golden sunset over the Karakoram peaks above Hunza valley"
+        alt="Fresh Pizza Pamir pizza in an open box with the Karakoram mountain range behind it"
         width={1920}
         height={1088}
         className="absolute inset-0 size-full scale-110 object-cover"
