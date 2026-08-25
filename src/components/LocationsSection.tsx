@@ -100,6 +100,20 @@ export function LocationsSection() {
             </Reveal>
           ))}
         </div>
+
+        {!expanded && hiddenCount > 0 && (
+          <div className="mt-8 flex justify-center sm:hidden">
+            <button
+              type="button"
+              onClick={() => setExpanded(true)}
+              aria-expanded={expanded}
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-border px-8 text-sm font-medium transition-colors duration-300 hover:border-accent hover:text-accent"
+            >
+              See More Locations
+              <span className="text-accent">+{hiddenCount}</span>
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
