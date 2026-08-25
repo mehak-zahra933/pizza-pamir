@@ -9,9 +9,6 @@ const MOBILE_PREVIEW_COUNT = 2;
 export function LocationsSection() {
   const [expanded, setExpanded] = useState(false);
 
-  const visibleLocations = expanded
-    ? locations
-    : locations.slice(0, MOBILE_PREVIEW_COUNT);
   const hiddenCount = locations.length - MOBILE_PREVIEW_COUNT;
 
   return (
