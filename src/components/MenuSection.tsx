@@ -152,7 +152,7 @@ export function MenuSection() {
                 className={cn(
                   "shrink-0 rounded-full border px-4 py-2 text-sm font-medium transition-colors duration-300 flex items-center gap-2",
                   active === cat && !searchQuery
-                    ? "border-transparent bg-primary text-primary-foreground"
+                    ? "border-transparent bg-accent text-accent-foreground"
                     : "border-border text-muted-foreground hover:border-foreground/40 hover:text-foreground"
                 )}
               >
