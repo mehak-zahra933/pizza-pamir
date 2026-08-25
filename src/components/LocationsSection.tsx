@@ -4,7 +4,16 @@ import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/Reveal";
 import { locations, PHONE_LINK, WHATSAPP_LINK } from "@/lib/site-data";
 
+const MOBILE_PREVIEW_COUNT = 2;
+
 export function LocationsSection() {
+  const [expanded, setExpanded] = useState(false);
+
+  const visibleLocations = expanded
+    ? locations
+    : locations.slice(0, MOBILE_PREVIEW_COUNT);
+  const hiddenCount = locations.length - MOBILE_PREVIEW_COUNT;
+
   return (
     <section id="locations" className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
