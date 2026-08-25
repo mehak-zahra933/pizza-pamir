@@ -28,9 +28,9 @@ export function Hero() {
         height={1088}
         className="absolute inset-0 size-full object-cover"
         style={{
-          objectPosition: "center 88%",
-          transform: `translate3d(0, ${offset * 0.12}px, 0) scale(1.42)`,
-          transformOrigin: "center 90%",
+          objectPosition: "center 82%",
+          transform: `translate3d(0, ${offset * 0.12}px, 0) scale(1.32)`,
+          transformOrigin: "center 82%",
         }}
       />
       <div className="hero-scrim absolute inset-0" />
