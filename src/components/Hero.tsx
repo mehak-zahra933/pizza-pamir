@@ -37,7 +37,7 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-5 pt-32 pb-16 sm:px-8 sm:pb-20">
         <p className="eyebrow reveal is-visible text-cream/70">
-          Karimabad · Aliabad · Attabad Lake · Gojal
+          Karimabad · Aliabad · Attabad Lake · Gojal · Tashkurgan
         </p>
         <h1 className="mt-5 max-w-4xl font-display text-[clamp(3rem,11vw,8rem)] leading-[0.92] text-cream">
           A Slice of <span className="italic text-gradient-ember">Hunza.</span>

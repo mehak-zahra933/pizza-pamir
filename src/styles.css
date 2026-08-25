@@ -83,7 +83,7 @@
 
   --gradient-hero: linear-gradient(
     180deg,
-    color-mix(in oklab, var(--charcoal) 70%, transparent) 0%,
+    color-mix(in oklab, var(--charcoal) 72%, transparent) 0%,
     color-mix(in oklab, var(--charcoal) 40%, transparent) 40%,
     color-mix(in oklab, var(--charcoal) 96%, transparent) 100%
   );
@@ -231,17 +231,7 @@
     transition: none;
   }
   .animate-scroll-hint,
-  .animate-ember,
-  .animate-bounce-x {
+  .animate-ember {
     animation: none;
   }
-}
-
-@keyframes bounce-x {
-  0%, 100% { transform: translateX(0); }
-  50% { transform: translateX(5px); }
-}
-
-.animate-bounce-x {
-  animation: bounce-x 1s ease-in-out infinite;
 }
