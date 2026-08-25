@@ -252,7 +252,7 @@ export const menuItems: AnyMenuItem[] = [
 
 export const galleryImages = [
   { src: galleryFireplace, alt: "Our iconic yak mascot welcoming guests inside Pizza Pamir" },
-  { src: galleryOutdoor, alt: "Outdoor terrace seating with Hunza mountain views" },
+  { src: galleryOutdoor, alt: "Turquoise Attabad Lake views from inside Pizza Pamir" },
   { src: galleryMaking, alt: "Pizza being topped by hand beside a hot oven" },
   { src: galleryFamily, alt: "Families sharing pizza around a long wooden table" },
   { src: heroHunza, alt: "Sunset over the Karakoram peaks above Hunza valley" },
