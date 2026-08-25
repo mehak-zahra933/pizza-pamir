@@ -1,4 +1,5 @@
 import { MapPin, Star } from "lucide-react";
+import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/Reveal";
 import { locations } from "@/lib/site-data";
 
