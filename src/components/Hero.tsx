@@ -28,7 +28,7 @@ export function Hero() {
         height={1088}
         className="absolute inset-0 size-full object-cover object-bottom"
         style={{
-          transform: `translate3d(0, ${offset * 0.12}px, 0) scale(1.3)`,
+          transform: `translate3d(0, ${offset * 0.12}px, 0) scale(1.36)`,
           transformOrigin: "center 100%",
         }}
       />
