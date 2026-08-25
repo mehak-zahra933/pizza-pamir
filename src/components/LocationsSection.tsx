@@ -25,11 +25,14 @@ export function LocationsSection() {
         </Reveal>
 
         <div className="mt-12 flex flex-col gap-5 sm:grid sm:grid-cols-2">
-          {visibleLocations.map((loc, i) => (
+          {locations.map((loc, i) => (
             <Reveal
               key={loc.id}
               delay={i * 90}
-              className={cn(loc.scenic && "sm:col-span-2")}
+              className={cn(
+                loc.scenic && "sm:col-span-2",
+                !expanded && i >= MOBILE_PREVIEW_COUNT && "hidden sm:block",
+              )}
             >
               <article className="group shadow-card h-full overflow-hidden rounded-2xl border border-border/70 bg-card transition-all duration-500 hover:-translate-y-2 hover:shadow-lift">
                 <div
