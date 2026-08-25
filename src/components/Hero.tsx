@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { ArrowDown } from "lucide-react";
-import heroHunza from "@/assets/hero-hunza.jpg";
+import heroPamir from "@/assets/hero-pizza-mountains.png.asset.json";
+
+const heroHunza = heroPamir.url;
 
 export function Hero() {
   const [offset, setOffset] = useState(0);
