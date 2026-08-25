@@ -84,8 +84,8 @@
   --gradient-hero: linear-gradient(
     180deg,
     color-mix(in oklab, var(--charcoal) 72%, transparent) 0%,
-    color-mix(in oklab, var(--charcoal) 40%, transparent) 40%,
-    color-mix(in oklab, var(--charcoal) 96%, transparent) 100%
+    color-mix(in oklab, var(--charcoal) 30%, transparent) 45%,
+    color-mix(in oklab, var(--charcoal) 70%, transparent) 100%
   );
   --gradient-ember: linear-gradient(
     135deg,
