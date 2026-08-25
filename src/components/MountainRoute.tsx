@@ -38,12 +38,11 @@ export function MountainRoute() {
             />
           </svg>
 
-          <ol className="relative grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <ol className="relative grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {locations.map((loc, i) => (
-              <Reveal as="li" key={loc.id} delay={i * 110} className="lg:pt-[var(--stagger)]">
+              <Reveal as="li" key={loc.id} delay={i * 110} className={cn("h-full", i % 2 !== 0 && "sm:mt-10")}>
                 <div
-                  className="group h-full rounded-2xl border border-cream/12 bg-cream/[0.04] p-6 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:border-accent/45"
-                  style={{ marginTop: `${(i % 2 === 0 ? 0 : 2.5)}rem` }}
+                  className="group h-full flex flex-col rounded-2xl border border-cream/12 bg-cream/[0.04] p-6 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:border-accent/45"
                 >
                   <div className="flex items-center justify-between">
                     <span className="eyebrow text-cream/45">Stop {i + 1}</span>
@@ -54,16 +53,18 @@ export function MountainRoute() {
                     <Star className="size-3.5 fill-accent text-accent" aria-hidden="true" />
                     {loc.rating} · {loc.reviews} reviews
                   </p>
-                  <p className="mt-4 text-sm leading-relaxed text-cream/70">{loc.description}</p>
-                  <p className="mt-4 text-xs text-cream/45">{loc.address}</p>
-                  <a
-                    href={loc.maps}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-accent transition-colors hover:text-cream"
-                  >
-                    View Location <span aria-hidden="true">→</span>
-                  </a>
+                  <p className="mt-4 text-sm leading-relaxed text-cream/70 flex-1">{loc.description}</p>
+                  <div className="mt-4">
+                    <p className="text-xs text-cream/45">{loc.address}</p>
+                    <a
+                      href={loc.maps}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-accent transition-colors hover:text-cream"
+                    >
+                      View Location <span aria-hidden="true">→</span>
+                    </a>
+                  </div>
                 </div>
               </Reveal>
             ))}
