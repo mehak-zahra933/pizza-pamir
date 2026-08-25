@@ -254,12 +254,11 @@ export const galleryImages = [
   { src: galleryFireplace, alt: "Our iconic yak mascot welcoming guests inside Pizza Pamir" },
   { src: galleryOutdoor, alt: "Turquoise Attabad Lake views from inside Pizza Pamir" },
   { src: galleryMaking, alt: "Pizza being topped by hand beside a hot oven" },
-  { src: galleryFamily, alt: "Families sharing pizza around a long wooden table" },
+  { src: galleryFamily, alt: "Bikers and friends sharing pizza at Pizza Pamir Hunza" },
   { src: heroHunza, alt: "Sunset over the Karakoram peaks above Hunza valley" },
 ];
 
 export const experienceHighlights = [
-  { icon: "🔥", label: "Fireplace" },
   { icon: "🏔", label: "Mountain atmosphere" },
   { icon: "🍕", label: "Fresh pizza" },
   { icon: "👨‍👩‍👧", label: "Family friendly" },
